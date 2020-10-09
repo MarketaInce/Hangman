@@ -17,7 +17,8 @@ This is a popular and simple game, where a player is supposed to guess a group o
 
 The puzzle for this game is requested from [this](http://puzzle.mead.io/puzzle) API.
 
-![Hangman Game](<src/cover_image.jpg>)
+| ![Hangman Game](<src/cover_image.jpg>) |
+| --- |
 
 
 ## Contact
