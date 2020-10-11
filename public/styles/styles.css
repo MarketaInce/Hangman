@@ -4,14 +4,10 @@
     padding: 0;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body {
+    font-family: 'Amatic SC', cursive;
     background: #2B292E;
     color: #fafafa;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -22,6 +18,8 @@ body {
 
 header {
     margin-bottom: 8rem;
+    font-size: 4rem;
+    letter-spacing:10px;
 }
 
 span {
@@ -38,7 +36,7 @@ span {
 
 p {
     font-weight: 300;
-    margin-bottom: .8rem;
+    margin-bottom: 2rem;
 }
 
 .puzzle {
@@ -47,17 +45,26 @@ p {
 }
 
 .button {
-    background: #7044a0;
+    font-family: 'Amatic SC', cursive;
+    background: #19d3da;
     border: none;
-    border-bottom: 2px solid #603a88;
+    display:block;
     cursor: pointer;
+    margin:auto;
     color: white;
     font-size: 1.4rem;
     font-weight: 300;
     padding: .8rem;
+    letter-spacing: 3px;
+    border-radius: 7px;
     transition: background .3s ease, color .3s ease;
 }
 
 .button:hover {
-    background: #5F3A87;
+    background: #008891;
+}
+
+#hangman-puzzle{
+    display: flex;
+    flex-direction:column;
 }

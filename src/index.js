@@ -12,12 +12,15 @@ const renderPuzzle = function() {
 
     puzzleElement.innerHTML = ''
 
+    let resetButtonDiv = document.createElement('div')
+
     let resetButton = document.createElement('button')
     resetButton.setAttribute("id", "reset")
     resetButton.classList.add("button")
     resetButton.textContent = 'Reset'
     resetButton.addEventListener('click', startGame)
-    
+
+    resetButtonDiv.appendChild(resetButton)
 
     let currentPuzzle = document.createElement('div')
     currentPuzzle.setAttribute("id", "puzzle")
@@ -34,7 +37,7 @@ const renderPuzzle = function() {
 
     puzzleElement.appendChild(currentPuzzle)
     puzzleElement.appendChild(statusMessage)
-    puzzleElement.appendChild(resetButton)
+    puzzleElement.appendChild(resetButtonDiv)
     
 }
 
